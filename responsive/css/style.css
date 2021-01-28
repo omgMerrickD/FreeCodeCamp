@@ -1,0 +1,24 @@
+.form-container {
+    display: flex;
+    justify-content: center;
+}
+
+form#survey-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    border: 1px solid black;
+    padding: 15px;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+input[type=radio] {
+    float: left;
+}
