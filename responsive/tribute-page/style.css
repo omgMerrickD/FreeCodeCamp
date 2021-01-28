@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+.lead {
+    margin: 5px;
+}
+
+.card-img-top {
+    margin: auto;
+}
+
+.footer {
+    margin: 5px;
+}
+
+.card-deck {
+    margin-bottom: 1rem;
+}
+
+.footer {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: auto;
+}
