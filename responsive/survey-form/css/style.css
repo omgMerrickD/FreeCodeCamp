@@ -1,24 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+:root {
+  --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url("https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg");
+  color: white;
+  line-height: 1.4;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.header-wrapper {
+  display: flex;
+  width: 675px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: inherit;
+}
+
 .form-container {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+  width: 675px;
+  padding: 20px 20px 20px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background: var(--color-darkblue-alpha);
+  /* box-sizing: border-box; */
+  border-radius: 7px;
+  box-shadow: 0px 0px 15px black;
 }
 
 form#survey-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 500px;
-    border: 1px solid black;
-    padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  border-radius: 7px;
+  padding: 15px;
 }
 
 .flex-col {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
-input[type=radio] {
-    float: left;
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.center-checkbox {
+  align-items: center;
+}
+
+.flex-row > label {
+  display: flex;
+  margin-left: 10px;
+  margin-bottom: 0.5rem;
+  align-items: center;
+}
+
+input#name {
+  color: #ced4da;
+  height: 38px;
+}
+input#name:hover {
+  border-color: crimson;
+}
+input#email {
+  color: #ced4da;
+  height: 38px;
+}
+input[type="email"] {
+  height: 38px;
+  radius: 7px;
+}
+input[type="submit"] {
+  margin-top: 10px;
+  height: 38px;
+  width: auto;
+  color: white;
+  background: green;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+input[type="checkbox"] {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+input[type="radio"] {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+textarea {
+  border: none;
+  border-radius: 5px;
+}
+
+label {
+  display: flex;
+}
+label#name-label {
+  margin-bottom: 10px;
+}
+label#email-label {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+label#number-label {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#age {
+  height: 38px;
+}
+
+#dropdown {
+  height: 38px;
+}
+.center-radios {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.end {
+  box-sizing: content-box;
+  margin-bottom: -5px;
 }
