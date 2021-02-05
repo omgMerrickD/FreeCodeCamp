@@ -2,16 +2,23 @@
 
 :root {
   --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+  --color-farha-dark: rgba(232, 65, 137, 0.8);
+  --color-farha-light: rgba(105, 33, 73, 1);
+  --color-peachpuff: #ffd4b1;
 }
 
 body {
   font-family: "Poppins", sans-serif;
+  background: var(--color-farha-light);
   background-image: linear-gradient(
       115deg,
-      rgba(58, 58, 158, 0.8),
-      rgba(136, 136, 206, 0.7)
+      var(--color-farha-dark),
+      var(--color-farha-light)
     ),
-    url("https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg");
+    url("../farha.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   color: white;
   line-height: 1.4;
 }
@@ -24,6 +31,7 @@ body {
 
 .header-wrapper {
   display: flex;
+  flex-direction: column;
   width: 675px;
   flex-wrap: wrap;
   justify-content: center;
@@ -40,10 +48,11 @@ body {
   padding: 20px 20px 20px 20px;
   margin-left: auto;
   margin-right: auto;
-  background: var(--color-darkblue-alpha);
+  background: var(--color-farha-light);
   /* box-sizing: border-box; */
   border-radius: 7px;
-  box-shadow: 0px 0px 15px black;
+  /* box-shadow: 0px 0px 15px var(--color-farha-dark); */
+  filter: drop-shadow (0px 0px 50px black);
 }
 
 form#survey-form {
@@ -60,6 +69,7 @@ form#survey-form {
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin-top: 20px;
 }
 
 .flex-row {
@@ -82,6 +92,10 @@ input#name {
   color: #ced4da;
   height: 38px;
 }
+input#number {
+  color: #ced4da;
+  height: 38px;
+}
 input#name:hover {
   border-color: crimson;
 }
@@ -98,7 +112,7 @@ input[type="submit"] {
   height: 38px;
   width: auto;
   color: white;
-  background: green;
+  background: var(--color-farha-dark);
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -146,6 +160,7 @@ label#number-label {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  margin-top: 10px;
 }
 .end {
   box-sizing: content-box;

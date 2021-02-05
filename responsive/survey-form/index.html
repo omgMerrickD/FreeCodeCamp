@@ -25,40 +25,40 @@
     </head>
 
     <body>
-
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
         <div class="main-container">
             <div class="header-wrapper">
-                <h1 id="title">This is a web form!
+                <h1 id="title">This is an HTML form.
                 </h1>
-                <p id="description">This could be a form for submitting contact information, or for applying for a job, or for booking an appointment, or for checking in at the DMV, or anything! WOW!</p>
+                <p id="description">You can submit data with it. Neat.</p>
             </div>
 
             <div class="form-container">
                 <form action="" id="survey-form">
                     <div class="flex-col">
                         <label for="name" id="name-label">Name</label>
-                        <input type="text" name="name" id="name" value="enter your name" required>
+                        <input type="text" name="name" id="name" placeholder="Enter your name" required>
                     </div>
 
                     <div class="flex-col">
                         <label for="email" id="email-label">Email</label>
-                        <input type="email" name="email" id="email" value="enter your email" required>
+                        <input type="email" name="email" id="email" placeholder="Enter your email" required>
                     </div>
 
                     <div class="flex-col">
                         <label for="age" id="number-label">Age (optonal)</label>
-                        <input type="number" name="age" id="age" value="age">
+                        <input type="number" name="age" id="number" value="age" min="10" max="99" placeholder="Age">
                     </div>
 
                     <div class="flex-col">
                         <p>What option best describes your current role?</p>
                         <select name="dropdown" id="dropdown">
                             <option value="">-- Select current role --</option>
-                            <option value="student">Student</option>
-                            <option value="ft-job">Full-time job</option>
-                            <option value="ft-student">Full-time Student</option>
-                            <option value="not-given">Prefer not to say</option>
-                            <option value="other">Other</option>
+                            <option value="student">Full-time bum</option>
+                            <option value="ft-job">Part-time slacker</option>
+                            <option value="ft-student">What's a role?</option>
+                            <option value="not-given">Uhm....</option>
+                            <option value="other">Sorry, I'm still thinking</option>
                         </select>
                     </div>
 
@@ -67,18 +67,18 @@
                         <p>Would you recommend my website to a friend?</p>
 
                         <label for="definitely" class="center-radios">
-                            <input type="radio" name="radio-group" id="definitely">
-                            Definitely
+                            <input type="radio" name="radio-group" id="definitely" value="definitely">
+                            HAHAHAHAH
                         </label>
 
                         <label for="word" class="center-radios">
-                            <input type="radio" name="radio-group" id="maybe">
-                            Maybe
+                            <input type="radio" name="radio-group" id="maybe" value="definitely">
+                            You're joking, right?
                         </label>
 
                         <label for="no-way" class="center-radios">
-                            <input type="radio" name="radio-group" id="no-way">
-                            No way
+                            <input type="radio" name="radio-group" id="no-way" value="no way">
+                            LOL!
                         </label>
                     </div>
 
@@ -86,65 +86,65 @@
                         <p>What would you like to see improved?</p>
 
                         <div class="flex-row center-checkbox">
-                            <input type="checkbox" name="front-end" id="front-end">
-                            <label for="front-end">Front-end projects</label>
+                            <input type="checkbox" name="front-end" id="front-end" value="front-end">
+                            <label for="front-end">More content</label>
                         </div>
 
                         <div class="flex-row center-checkbox">
-                            <input type="checkbox" name="back-end" id="back-end">
-                            <label for="back-end">Back-end proejcts</label>
+                            <input type="checkbox" name="back-end" id="back-end" value="back-end">
+                            <label for="back-end">Less content</label>
                         </div>
 
                         <div class="flex-row center-checkbox">
-                            <input type="checkbox" name="data-vis" id="data-vis">
-                            <label for="data-vis">Data Visualization</label>
+                            <input type="checkbox" name="data-vis" id="data-vis" value="data-vis">
+                            <label for="data-vis">More memes</label>
                         </div>
 
                         <div class="flex-row center-checkbox">
-                            <input type="checkbox" name="challenges" id="challenges">
-                            <label for="challenges">Challenges</label>
+                            <input type="checkbox" name="challenges" id="challenges" value="challenges">
+                            <label for="challenges">Contests</label>
                         </div>
 
                         <div class="flex-row center-checkbox">
-                            <input type="checkbox" name="open-source" id="open-source">
-                            <label for="open-source">Open Source Community</label>
+                            <input type="checkbox" name="open-source" id="open-source" value="open-source">
+                            <label for="open-source">More photos</label>
                         </div>
 
                         <div class="flex-row center-checkbox">
-                            <input type="checkbox" name="gitter" id="gitter">
-                            <label for="gitter">Gitter Help Rooms</label>
+                            <input type="checkbox" name="gitter" id="gitter" value="gitter">
+                            <label for="gitter">Less photos</label>
                         </div>
 
                         <div class="flex-row center-checkbox">
-                            <input type="checkbox" name="videos" id="videos">
-                            <label for="videos">Videos</label>
+                            <input type="checkbox" name="videos" id="videos" value="videos">
+                            <label for="videos">This is stupid</label>
                         </div>
 
                         <div class="flex-row center-checkbox">
-                            <input type="checkbox" name="meetups" id="meetups">
-                            <label for="meetups">City Meetups</label>
+                            <input type="checkbox" name="meetups" id="meetups" value="meetups">
+                            <label for="meetups">No it's not. You are.</label>
                         </div>
 
                         <div class="flex-row center-checkbox">
-                            <input type="checkbox" name="wiki" id="wiki">
-                            <label for="wiki">Wiki</label>
+                            <input type="checkbox" name="wiki" id="wiki" value="wiki">
+                            <label for="wiki">#BuildTheWall</label>
                         </div>
 
                         <div class="flex-row center-checkbox">
-                            <input type="checkbox" name="forum" id="forum">
-                            <label for="forum">Forum</label>
+                            <input type="checkbox" name="forum" id="forum" value="forum">
+                            <label% for="forum">#StopTheSteal</labe%>
                         </div>
 
                         <div class="flex-row center-checkbox">
-                            <input type="checkbox" name="courses" id="courses">
-                            <label for="courses">Additional courses</label>
+                            <input type="checkbox" name="courses" id="courses" value="courses">
+                            <label for="courses">1 + 1 = 5</label>
                         </div>
                     </div>
 
                     <div class="flex-col end">
                         <p>Any comments or suggestions?</p>
                         <textarea name="comments" id="comments" cols="40" rows="15" value="enter your comments here..."></textarea>
-                        <input type="submit" value="Submit">
+                        <input type="submit" value="Submit" id="submit">
                     </div>
                 </form>
             </div>
